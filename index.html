@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head><title>Library Management</title>
+	<script type="text/javascript">
+		function validate(){
+			var usn = document.forms["lib"]["usn"].value;
+			var pwd = document.forms["lib"]["pass"].value;
+
+			if(usn == "1234" && pwd == "1234")
+				window.location.href="https://www.google.com";
+			else
+				alert("Invalid user"); 
+		}
+
+	</script>
+
+	<style type="text/css">
+		<!-- Styles here -->
+	</style>
+
+</head>
+<!--Link to download image
+https://wallpapersafari.com/w/Bmhy8U
+ -->
+<body background="C:\Users\BOOS\Downloads\animate\lib.jpg">
+	<form name="lib" action="next.html">
+		Enter the username
+		<input type="text" name="usn" placeholder="Enter email">
+		Enter password
+		<input type="password" name="pass" placeholder="Enter password">
+		<input type="submit" value="submit" onclick="validate()">
+	</form>
+</body> 
+</html>
